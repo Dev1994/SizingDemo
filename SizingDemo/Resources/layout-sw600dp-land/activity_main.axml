@@ -3,63 +3,54 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:background="@android:color/white">
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-        <LinearLayout
-            android:id="@+id/groupNumbers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:src="@drawable/lthlogo" />
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/btnNewEnrolment"
-                    android:layout_width="110dp"
-                    android:layout_height="160dp"
-                    android:layout_weight="1"
-                    android:layout_marginRight="15dp"
-                    android:background="@drawable/compass" />
-                <Button
-                    android:id="@+id/btnSearchUsers"
-                    android:layout_width="110dp"
-                    android:layout_height="160dp"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="15dp"
-                    android:background="@drawable/camping" />
-            </LinearLayout>
-        </LinearLayout>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/lthlogo" />
     </LinearLayout>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ffff"
-        android:layout_margin="5dp">
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnNewEnrolment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/compass" />
+        <Button
+            android:id="@+id/btnSearchUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/camping" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
         <Button
             android:id="@+id/btnUsers"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/team" />
         <Button
             android:id="@+id/btnLogout"
-            android:layout_width="40dp"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:background="@drawable/exit" />
-    </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>
