@@ -2567,9 +2567,6 @@ namespace SizingDemo
 			// aapt resource value: 0x7f08000a
 			public const int ghost_view = 2131230730;
 			
-			// aapt resource value: 0x7f08008b
-			public const int groupNumbers = 2131230859;
-			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
 			
@@ -2587,6 +2584,9 @@ namespace SizingDemo
 			
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
+			
+			// aapt resource value: 0x7f08008b
+			public const int imgLogo = 2131230859;
 			
 			// aapt resource value: 0x7f0800ab
 			public const int info = 2131230891;
